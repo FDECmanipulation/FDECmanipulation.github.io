@@ -47,7 +47,7 @@
 <body>
 
 
-  <section class="hero">
+<section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -72,7 +72,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://fdecmanipulation.github.io/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -81,31 +81,22 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://fdecmanipulation.github.io/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code </span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://fdecmanipulation.github.io/" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -159,11 +150,12 @@
 
 <!-- Image list -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
       <div class="image-list">
         <!-- First image with description -->
         <div class="image-item">
+          <h3 class="title is-4 has-text-left">第一张图片标题</h3>
           <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
             First image description.First image description.First image description.First image description.First image description.First image description.First image description.First image description.
@@ -204,21 +196,29 @@
   .image-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Adds space between each image-item */
+    gap: 3rem; /* Increased gap for better separation */
   }
   
   .image-item {
-    margin-bottom: 2rem; /* Adds space below each item */
+    margin-bottom: 1rem;
   }
   
   .image-item img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centers the image */
+    margin: 0 auto;
+    border-radius: 4px; /* Optional: adds slight rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+  }
+  
+  .image-item .subtitle {
+    margin-top: 1rem;
+    max-width: 800px; /* Matches typical is-max-desktop width */
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
-
 
 
 
