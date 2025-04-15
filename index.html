@@ -56,9 +56,9 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Haojie Luo</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Haojie Luo</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xizhou Bu</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Xizhou Bu</a><sup></sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Wei Li</a>
                   </span>
@@ -157,44 +157,67 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Image list -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.First image description.First image description.First image description.First image description.First image description.First image description.First image description.
-        </h2>
+      <div class="image-list">
+        <!-- First image with description -->
+        <div class="image-item">
+          <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            First image description.First image description.First image description.First image description.First image description.First image description.First image description.First image description.
+          </h2>
+        </div>
+        
+        <!-- Second image with description -->
+        <div class="image-item">
+          <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
+        </div>
+        
+        <!-- Third image with description -->
+        <div class="image-item">
+          <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Third image description.
+          </h2>
+        </div>
+        
+        <!-- Fourth image with description -->
+        <div class="image-item">
+          <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Fourth image description.
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End image list -->
+
+<style>
+  /* Add some styling for the image list */
+  .image-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Adds space between each image-item */
+  }
+  
+  .image-item {
+    margin-bottom: 2rem; /* Adds space below each item */
+  }
+  
+  .image-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+  }
+</style>
 
 
 
